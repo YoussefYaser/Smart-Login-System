@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 10 smart login system</title>
+    <!-- start bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- end bootstrap -->
+    <!-- start font awesome -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- end font awesome -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="home vh-100 d-flex justify-content-center align-items-center">
+        <div class="home-caption text-white">
+            <h1 class="fw-bold text-capitalize">welcome</h1>
+            <h2 class="text-center h3 fw-light text-capitalize mb-4" id="current"></h2>
+            <a href="index.html" class="btn d-block w-fit m-auto bg-main-color shadow text-white border border-1 border-white" id="logout">Log out</a> 
+        </div>
+
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/validation.js"></script>
+    <script>
+        var currentUser = document.getElementById('current');
+        currentUser.innerHTML = sessionStorage.getItem('currentUser');
+
+        var logout = document.getElementById('logout');
+
+        logout.onclick = function(){
+            sessionStorage.clear();
+        }
+    </script>
+    
+</body>
+</html>

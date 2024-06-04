@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 10 smart login system</title>
+
+    <!-- start bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- end bootstrap -->
+    <!-- start font awesome -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- end font awesome -->
+    <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+<body>
+
+
+    <div class="page bg-main-color">
+        <div class="container d-flex justify-content-center align-items-start vh-100 py-5">
+            <form class="sign text-center bg-main-color mt-5 py-5 px-3 px-sm-5 w-75 mx-3 mx-md-5">
+                <h2 class="text-main-color mb-4">Smart Login System</h2>
+                <input type="email" name="email" id="email" class="form-control text-white mb-3 position-relative" placeholder="Enter Your Email" autocomplete="off">
+                <input type="password" name="password" id="password" class="form-control text-white mb-3 position-relative" placeholder="Enter Your Password">
+                <div class="text-danger mb-3 d-none" id="alert1">You have to enter your email and password</div>
+                <div class="text-danger mb-3 d-none" id="alert2">This account is not found</div>
+                <a href="home.html" class="btn text-main-color w-100 mb-3" type="button" id="login">login</a>
+                <p class="text-white">Don't have an account?
+                    <a href="signup.html" class="text-white ms-1">Sign Up</a>
+                </p>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/signin.js"></script> 
+    <script src="js/validation.js"></script>
+
+</body>
+</html>

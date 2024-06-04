@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 10 smart login system</title>
+
+    <!-- start bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- end bootstrap -->
+    <!-- start font awesome -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- end font awesome -->
+    <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body>
+
+    <div class="page bg-main-color">
+        <div class="container d-flex justify-content-center align-items-start vh-100 py-5">
+            <form class="sign text-center bg-main-color mt-5 py-5 px-3 px-sm-5 w-75 mx-3 mx-md-5">
+                <h2 class="text-main-color mb-4">Smart Login System</h2>
+                <input type="text" name="name" id="name" class="form-control text-white mb-3"
+                    placeholder="Enter Your Name" autocomplete="off">
+                <input type="email" name="email" id="email" class="form-control text-white mb-3"
+                    placeholder="Enter Your Email" autocomplete="off">
+                <input type="password" name="password" id="password" class="form-control text-white mb-3"
+                    placeholder="Enter Your Password">
+                <div class="text-danger mb-3 d-none" id="alert1">This account is already created</div>
+                <a href="index.html" class="btn text-main-color w-100 mb-3" type="button" id="signup">Sign Up</a>
+                <p class="text-white">You have an account?
+                    <a href="index.html" class="text-white ms-1">Sign in</a>
+                </p>
+            </form>
+        </div>
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary d-none" data-bs-toggle="modal" data-bs-target="#validationModal">
+            validation alert
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="validationModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content bg-main-color text-white">
+                    <div class="modal-header border-0 pb-0">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel"></h1>
+                        <button type="button" class="btn-close text-white" data-bs-dismiss="modal" aria-label="Close">
+                            <i class="fa-solid fa-x"></i>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <ul class="list-unstyled">
+                            <li class="mb-2 d-flex fw-light align-items-start">
+                                <span class="me-2 border border-1 border-white border-start-0 border-top-0 border-bottom-0 pe-2">
+                                    <i class="fa-solid fa-user"></i>
+                                </span>
+                                The email must be in the form of "*@*.*"
+                            </li>
+                            <li class="d-flex fw-light align-items-start">
+                                <span class="me-2 border border-1 border-white border-start-0 border-top-0 border-bottom-0 pe-2">
+                                    <i class="fa-solid fa-lock"></i>
+                                </span>
+                                The password must start with a capital letter and between 8 to 21 letter and special character (!@#$%^&*+)
+                            </li>
+                        </ul>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/signup.js"></script>
+    <script src="js/validation.js"></script>
+
+</body>
+
+</html>

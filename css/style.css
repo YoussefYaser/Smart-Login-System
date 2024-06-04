@@ -1,0 +1,81 @@
+/* START CUSTOM CLASSES */
+
+.w-fit{
+    width: fit-content;
+}
+
+.bg-main-color{
+    background-color: #24353F;
+}
+
+.text-main-color{
+    color: #17A2B8;
+}
+
+/* END CUSTOM CLASSES */
+
+.page .container .sign{
+    box-shadow: 0 1rem 10rem rgba(0, 0, 0, 60%);
+}
+
+@media(max-width: 767px){
+    .page .container .sign{
+        width: 100% !important;
+    }
+}
+
+.page .container .sign h2{
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+
+@media(max-width: 329px){
+    .page .container .sign h2{
+        font-size: 2rem;
+    }
+}
+
+.page .container .sign input{
+    background-color: transparent;
+}
+
+.page .container .sign input::placeholder{
+    color: white;
+}
+
+.page .container .sign input:focus{
+    box-shadow: none;
+}
+
+.page .container .sign p a{
+    text-decoration: none;
+}
+
+.page .container .sign p a:hover{
+    text-decoration: underline;
+}
+
+.page .container .sign .btn{
+    border: 1px solid #17A2B8;
+}
+
+.page .container .sign .btn:hover{
+    background-color: #17A2B8;
+    color: white;
+}
+
+.btn-close {
+    --bs-btn-close-bg: none;
+    opacity: 1;
+}
+
+.home{
+    background: linear-gradient(#24353fe3, #24353ff7),
+    url(../images/counters-bg.jpg);
+    background-size: cover; 
+}
+
+.home h1{
+    font-size: 3rem;
+    letter-spacing: 3px;
+}
